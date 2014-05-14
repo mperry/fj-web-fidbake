@@ -3,6 +3,7 @@
   <head>
     <title>
     Functional Java
+        - Community
     </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -59,75 +60,26 @@
     <!-- Begin page content -->
     <div class="container">
 
-	    <div class="row">
-          <div class="col-md-9">
-
-            <article>
-			  <h2>Tag #blog</h2>
-			  <hr>
-              <h4 class="well well-sm tag-month">March 2014</h4>
-              <ul>
-                <li>
-                  <p>04 - <a href="2014/fourth-post.html">Fourth Post</a></p>
-                </li>
-                <li>
-                  <p>03 - <a href="2014/third-post.html">Third Post</a></p>
-                </li>
-              </ul>
-			  <h4 class="well well-sm tag-month">February 2014</h4>
-              <ul>
-                <li>
-                  <p>28 - <a href="2014/second-post.html">Second Post</a></p>
-                </li>
-              </ul>
-			  <h4 class="well well-sm tag-month">July 2013</h4>
-              <ul>
-                <li>
-                  <p>17 - <a href="2013/first-post.html">First Post</a></p>
-                </li>
-              </ul>
-		    </article>
-
-	      </div> <!-- /.col-md -->
-      <div id="sidebar" class="col-md-3">
-        <aside>
-          <section>
-            <div class="panel panel-primary">
-              <div class="panel-heading">
-                <i class="fa fa-users fa-lg panel-title"> Social</i>
-              </div>
-              <div class="list-group sidebar-list">
-                  <a href="https://github.com/jbake-org" target="_blank" class="list-group-item sidebar-list-item">
-                    <i class="fa fa-github-square fa-2x social-icon"></i> github
-                  </a>
-                  <a href="https://twitter.com/javabake" target="_blank" class="list-group-item sidebar-list-item">
-                    <i class="fa fa-twitter-square fa-2x social-icon"></i> twitter
-                  </a>
-                  <a href="https://plus.google.com/+OpenShift" target="_blank" class="list-group-item sidebar-list-item">
-                    <i class="fa fa-google-plus-square fa-2x social-icon"></i> google+
-                  </a>
-              </div>
-            </div>
-            <div class="panel panel-primary static-box">
-                <div class="panel-heading">
-                    <i class="fa fa-info-circle fa-lg panel-title"> Static</i>
-                </div>
-                <div class="panel-body">
-                    <p><a href="http://en.opensuse.org/Portal:13.1"><img src="http://countdown.opensuse.org/small.png" alt="openSUSE Counter"/></a></p>
-                </div>
-            </div>
-            <div class="panel panel-primary github-repoview">
-                <div class="panel-heading">
-                    <i class="fa fa-github fa-lg panel-title"> Repositories</i>
-                </div>
-                <div id="repoview" class="panel-body">
-                </div>
-            </div>
-          </section>
-        </aside>
-      </div>
-        </div> <!-- /.row -->
-
+      <div class="row">
+        <div class="col-md-12">
+          <article>
+            <h2>Community</h2>
+            <p><ul>
+  <li><a href="https://github.com/functionaljava/functionaljava">Github Project</a></li>
+  <li><a href="https://github.com/functionaljava/functionaljava/archive/master.zip">Github Source (latest)</a></li>
+  <li><a href="https://github.com/functionaljava/functionaljava/issues?state=open">Issues</a></li>
+  <li><a href="https://code.google.com/p/functionaljava/issues/list">Obsolete Issues (Google)</a></li>
+  <li><a href="https://code.google.com/p/functionaljava/">Obsolete Google Code Hosting</a></li>
+  <li>Mailing list via Google Groups: <a href="http://groups.google.com/group/functionaljava">http://groups.google.com/group/functionaljava</a></li>
+  <li>Group email: <a href="mailto:functionaljava@googlegroups.com">functionaljava@googlegroups.com</a></li>
+  <li>IRC Channel: <a href="irc://freenode.net/#functionaljava">irc://freenode.net/#functionaljava</a></li>
+  <li><a href="https://functionaljava.ci.cloudbees.com/">Cloud Build Machine (Cloudbees)</a></li>
+  <li><a href="http://mvnrepository.com/artifact/org.functionaljava/functionaljava">Functional Java @ Maven Repository</a></li>
+  <li><a href="https://oss.sonatype.org/content/groups/public/org/functionaljava/functionaljava/">Sonatype Functional Java artifacts</a></li>
+</ul></p>
+          </article>
+        </div> <!-- /.col-md-12 -->
+      </div> <!-- /.row -->
 
       </div><!-- /.container -->
 
@@ -167,27 +119,5 @@
     </script>
 
 
-      <!-- call api only when sidebar is visible -->
-        <script type="text/javascript">
-          var username = 'jbake-org';
-          var repoLimit = 5;
-          var noRepoMsg = 'No public repositories.';
-          $(function() {
-            $.getJSON('https://api.github.com/users/' + username + '/repos?callback=?', {sort: 'pushed'}, function(resp) {
-              if (resp.data.length > 0) {
-                $('#repoview').append('<ul></ul>');
-                $.each($(resp.data), function(i, val) {
-                  $('#repoview > ul').append('<li><a href="'+val['html_url']+'">'+val['name']+'</a><p>'+((val['description']) ? val['description'] : '(No description.)')+'</p></li>');
-                  if(i == repoLimit -1) {
-                      return false;
-                  }
-                });
-              } else {
-                $('#repoview').append('<p>' + noRepoMsg + '</p>');
-              }
-            });
-          });
-        </script>
-  </body>
+        </body>
 </html>
-
