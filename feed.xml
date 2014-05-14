@@ -1,18 +1,18 @@
 <?xml version="1.0"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Jbaked blog.</title>
-    <link>http://jbake-fidano.rhcloud.com/</link>
-    <atom:link href="http://jbake-fidano.rhcloud.com/feed.xml" rel="self" type="application/rss+xml" />
+    <title>FunctionalJava.</title>
+    <link>http://mperry.github.io/fj-web-fidbake/</link>
+    <atom:link href="http://mperry.github.io/fj-web-fidbake/feed.xml" rel="self" type="application/rss+xml" />
     <description>For future use?</description>
     <language>en</language>
-    <pubDate>14/05/2014 8:00:43 PM</pubDate>
-    <lastBuildDate>14/05/2014 8:00:43 PM</lastBuildDate>
+    <pubDate>14/05/2014 8:07:43 PM</pubDate>
+    <lastBuildDate>14/05/2014 8:07:43 PM</lastBuildDate>
 
       <item>
         <title>Fourth Post</title>
         <author>Author</author>
-        <link>http://jbake-fidano.rhcloud.com2014/fourth-post.html</link>
+        <link>http://mperry.github.io/fj-web-fidbake2014/fourth-post.html</link>
         <pubDate>04/03/2014 12:00:00 AM</pubDate>
         <guid isPermaLink="false">2014/fourth-post.html</guid>
         <description>
@@ -56,7 +56,7 @@ func main() {
       <item>
         <title>Third Post</title>
         <author>Author</author>
-        <link>http://jbake-fidano.rhcloud.com2014/third-post.html</link>
+        <link>http://mperry.github.io/fj-web-fidbake2014/third-post.html</link>
         <pubDate>03/03/2014 12:00:00 AM</pubDate>
         <guid isPermaLink="false">2014/third-post.html</guid>
         <description>
@@ -75,7 +75,7 @@ func main() {
       <item>
         <title>Second Post</title>
         <author>Author</author>
-        <link>http://jbake-fidano.rhcloud.com2014/second-post.html</link>
+        <link>http://mperry.github.io/fj-web-fidbake2014/second-post.html</link>
         <pubDate>28/02/2014 12:00:00 AM</pubDate>
         <guid isPermaLink="false">2014/second-post.html</guid>
         <description>
@@ -85,7 +85,7 @@ func main() {
       <item>
         <title>First Post</title>
         <author>Author</author>
-        <link>http://jbake-fidano.rhcloud.com2013/first-post.html</link>
+        <link>http://mperry.github.io/fj-web-fidbake2013/first-post.html</link>
         <pubDate>17/07/2013 12:00:00 AM</pubDate>
         <guid isPermaLink="false">2013/first-post.html</guid>
         <description>
